@@ -1,0 +1,2 @@
+class Dropzone < ApplicationRecord
+end
