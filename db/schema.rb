@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_26_182150) do
+ActiveRecord::Schema.define(version: 2022_03_27_004202) do
 
   create_table "dropzones", force: :cascade do |t|
     t.boolean "windtunnel"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 2022_03_26_182150) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "skydivers", force: :cascade do |t|
+    t.boolean "wingsuit"
+    t.integer "jumps"
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "dropzone_id"
+    t.index ["dropzone_id"], name: "index_skydivers_on_dropzone_id"
   end
 
 end
