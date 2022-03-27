@@ -244,6 +244,8 @@
           null,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
@@ -251,6 +253,11 @@
         "lines": [
           1,
           null
+        ]
+      },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/dropzones/skydivers/index_spec.rb": {
+        "lines": [
+
         ]
       },
       "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/skydivers/show_spec.rb": {
@@ -334,8 +341,21 @@
           1,
           null
         ]
+      },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/app/controllers/skydivers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1648415911
+    "timestamp": 1648419806
   }
 }
