@@ -7,6 +7,6 @@ RSpec.describe 'the dropzone show page' do
     visit "/dropzones/#{dropzone.id}"
     save_and_open_page
     expect(page).to have_content(dropzone.name)
-end
+  end
 
 end

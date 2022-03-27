@@ -4,6 +4,5 @@ class DropzonesController < ApplicationController
   end
   def show
     @dropzone = Dropzone.find(params[:id])
-    binding.pry
   end
 end

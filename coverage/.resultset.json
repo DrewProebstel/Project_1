@@ -253,6 +253,40 @@
           null
         ]
       },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/skydivers/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/models/dropzone_spec.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/drewproebstel/turing/2module/project_1/dropzone_data/app/models/dropzone.rb": {
         "lines": [
           1,
@@ -264,6 +298,15 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/models/skydiver_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
           null
         ]
       },
@@ -282,7 +325,6 @@
           null,
           1,
           1,
-          1,
           null,
           null
         ]
@@ -294,6 +336,6 @@
         ]
       }
     },
-    "timestamp": 1648357294
+    "timestamp": 1648415911
   }
 }
