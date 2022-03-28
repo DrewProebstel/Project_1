@@ -1,4 +1,12 @@
 <h3>Skydivers</h3>
 <%@skydivers.each do |skydiver| %>
-<p><%= skydiver.first_name =%></p>
+<%= skydiver.first_name%>
+ <%= skydiver.last_name%>
+  ID:<%= skydiver.id %>
+  Wingsuit:<%= skydiver.wingsuit %>
+  Jumps:<%= skydiver.jumps %>
+  Created At: <%= skydiver.created_at %>
+  Updated At: <%= skydiver.updated_at %>
+  Dropzone ID: <%= skydiver.dropzone_id %>
+ <p></p>
 <% end %>
