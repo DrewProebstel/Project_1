@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/dropzones/:id', to:'dropzones#show'
 
   get '/skydivers', to: 'skydivers#index'
+  get '/skydivers/:id', to:'skydivers#show'
 end
