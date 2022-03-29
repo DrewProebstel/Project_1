@@ -1,9 +1,8 @@
 <%= link_to "skydivers", "/skydivers" %>
 <%= link_to "dropzones", "/dropzones" %>
 <br>
-<h3>Skydivers</h3>
 <%@skydivers.each do |skydiver| %>
-<%= skydiver.first_name%>
+<%= link_to skydiver.first_name, "/skydivers/#{skydiver.id}" %>
  <%= skydiver.last_name%>
   ID:<%= skydiver.id %>
   Wingsuit:<%= skydiver.wingsuit %>

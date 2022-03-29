@@ -244,8 +244,15 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
           null,
           1,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -255,9 +262,56 @@
           null
         ]
       },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/dropzones/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/dropzones/skydivers/index_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
         ]
       },
       "/Users/drewproebstel/turing/2module/project_1/dropzone_data/spec/features/skydivers/show_spec.rb": {
@@ -328,8 +382,15 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
+          1,
+          2,
+          null,
+          1,
+          null,
+          null,
+          1,
           1,
           1,
           null,
@@ -342,19 +403,29 @@
           null
         ]
       },
+      "/Users/drewproebstel/turing/2module/project_1/dropzone_data/app/controllers/dropzone_skydivers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/drewproebstel/turing/2module/project_1/dropzone_data/app/controllers/skydivers_controller.rb": {
         "lines": [
           1,
           1,
           1,
           null,
-          null,
-          null,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1648431251
+    "timestamp": 1648528516
   }
 }

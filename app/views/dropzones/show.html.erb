@@ -1,7 +1,13 @@
+<%= link_to "skydivers", "/skydivers" %>
+<%= link_to "dropzones", "/dropzones" %>
+<%= link_to "this dropzone's Skydivers", "/dropzones/#{@dropzone.id}/skydivers" %>
+<br>
 <%=@dropzone.name%>
 <br>
 Employees: <%=@dropzone.employees%>
 <br>
 City: <%=@dropzone.city%>
 <br>
-Has windtunnel?: <%=@dropzone.windtunnel%>
+Windtunnel: <%=@dropzone.windtunnel%>
+<br>
+Skydivers: <%= @dropzone.skydivers.length %>
