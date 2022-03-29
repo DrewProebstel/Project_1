@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/dropzones/:id', to:'dropzones#show'
   get '/dropzones/:id/skydivers', to:'dropzone_skydivers#index'
   post '/dropzones', to: 'dropzones#create'
+  get '/dropzones/:id/edit', to:'dropzones#edit'
+  patch '/dropzones/:id', to: 'dropzones#update'
 
   get '/skydivers', to: 'skydivers#index'
   get '/skydivers/:id', to:'skydivers#show'
