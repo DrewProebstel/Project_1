@@ -1,4 +1,9 @@
+<%= link_to "Skydivers", "/skydivers" %>
+<%= link_to "Dropzones", "/dropzones" %>
+<%= link_to "New Dropzone", "/dropzones/new" %>
+<br>
+
 <h1>Dropzones</h1>
 <% @dropzones.each do |dropzone| %>
-  <p><%= dropzone.name %></p>
+  <p><%= dropzone.name %> <%= dropzone.id %>  <%= link_to "Edit Dropzone", "/dropzones/#{dropzone.id}/edit"%>  <%= link_to "Delete Dropzone", "/dropzones/#{dropzone.id}", method: :delete   %></p>
 <% end %>

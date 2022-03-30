@@ -1,0 +1,22 @@
+<%= link_to "Skydivers", "/skydivers" %>
+<%= link_to "Dropzones", "/dropzones" %>
+<%= link_to "Create Skydiver", "/dropzones/#{params[:id]}/skydivers/new" %>
+<%= link_to "Sort By Last Name", "/dropzones/#{params[:id]}/skydivers/?sort=true"%>
+<br>
+<%@skydivers.each do |skydiver| %>
+<%= skydiver.first_name%>
+ <%= skydiver.last_name%>
+  ID:<%= skydiver.id %>
+  Wingsuit:<%= skydiver.wingsuit %>
+  Jumps:<%= skydiver.jumps %>
+  Created At: <%= skydiver.created_at %>
+  Updated At: <%= skydiver.updated_at %>
+  Dropzone ID: <%= skydiver.dropzone_id %>
+ <p></p>
+<% end %>
+<br>
+Hide skydivers with less or equal jumps
+<%= form_with url: "/dropzones/#{params[:id]}/skydivers/?jump_no=#{params[:jump_no]}", method: :get, local:true do |form| %>
+  <%= form.text_field :jump_no %>
+  <%= form.submit 'Submit' %>
+<% end  %>

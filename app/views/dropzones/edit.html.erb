@@ -1,0 +1,13 @@
+<%= link_to "Skydivers", "/skydivers" %>
+<%= link_to "Dropzones", "/dropzones" %>
+<%= form_with url: "/dropzones/#{@dropzone.id}", method: :patch, local:true do |form| %>
+  <%= form.label :windtunnel %>
+  <%= form.text_field :windtunnel %>
+  <%= form.label :employees %>
+  <%= form.text_field :employees %>
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.submit 'Update Dropzone' %>
+<% end  %>

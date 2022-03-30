@@ -1,7 +1,15 @@
+<%= link_to "Skydivers", "/skydivers" %>
+<%= link_to "Dropzones", "/dropzones" %>
+<%= link_to "This Dropzone's Skydivers", "/dropzones/#{@dropzone.id}/skydivers" %>
+<%= link_to "Update Dropzone", "/dropzones/#{@dropzone.id}/edit" %>
+<%= link_to "Delete Dropzone", "/dropzones/#{@dropzone.id}", method: :delete   %>
+<br>
 <%=@dropzone.name%>
 <br>
 Employees: <%=@dropzone.employees%>
 <br>
 City: <%=@dropzone.city%>
 <br>
-Has windtunnel?: <%=@dropzone.windtunnel%>
+Windtunnel: <%=@dropzone.windtunnel%>
+<br>
+Skydivers: <%= @dropzone.skydivers.length %>
