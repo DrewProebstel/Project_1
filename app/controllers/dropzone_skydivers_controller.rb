@@ -1,7 +1,7 @@
 class DropzoneSkydiversController < ApplicationController
   def index
     @dropzone = Dropzone.find(params[:id])
-    @skydivers = @dropzone.skydivers
+    @skydivers = @dropzone.skydivers.order(:last_name)
   end
 
   def create
