@@ -1,7 +1,11 @@
 class DropzoneSkydiversController < ApplicationController
   def index
     @dropzone = Dropzone.find(params[:id])
-    @skydivers = @dropzone.skydivers.order(:last_name)
+    if params[:sort] == "true"
+      @skydivers = @dropzone.skydivers.order(:last_name)
+    else
+       @skydivers = @dropzone.skydivers
+    end
   end
 
   def create
