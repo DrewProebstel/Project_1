@@ -1,6 +1,7 @@
 <%= link_to "skydivers", "/skydivers" %>
 <%= link_to "dropzones", "/dropzones" %>
 <%= link_to "Update Skydiver", "/skydivers/#{params[:id]}/edit" %>
+<%= link_to "Delete Skydiver", "/skydivers/#{@skydiver.id}", method: :delete%>
 <br>
 <%= @skydiver.first_name%>
  <%= @skydiver.last_name%>
