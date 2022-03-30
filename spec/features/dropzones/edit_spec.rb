@@ -6,16 +6,17 @@ RSpec.describe 'the dropzone edit' do
     visit '/dropzones'
     click_link "Edit #{dropzone.name}"
 
-    expect(current_path).to eq("/dropzones/#{dropzone.id}")
+    expect(current_path).to eq("/dropzones/#{dropzone.id}/edit")
   end
 
   it 'can edit the dropzone' do
     dropzone = Dropzone.create(windtunnel: false, employees: 12, city: "Shelton", name: "Skydive Kapowsin")
-    visit "/dropzones/#{artist.id}/edit"
-    fill_in 'employees', with: "26"
-    click_button 'Update Skydive Kapowsin'
+    visit "/dropzones/#{dropzone.id}/edit"
+    fill_in 'name', with: "Mile-High Skydive"
+    click_button 'Update Dropzone'
 
     expect(current_path).to eq("/dropzones")
-    expect(page).to have_content('26')
+    expect(page).to have_content('Mile-High Skydive')
+    expect(page).to_not have_content('Skydive Kapowsin')
   end
 end
