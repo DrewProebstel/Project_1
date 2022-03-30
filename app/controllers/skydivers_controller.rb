@@ -16,6 +16,13 @@ class SkydiversController < ApplicationController
   @skydiver.update(skydiver_params)
   redirect_to "/skydivers/#{params[:id]}"
   end
+
+  def destroy
+    @skydiver = Skydiver.find(params[:id])
+    @skydiver.destroy
+    redirect_to "/skydivers"
+  end
+
   private
     def skydiver_params
         params.permit(:wingsuit, :jumps, :first_name, :last_name, :created_at, :updated_at)

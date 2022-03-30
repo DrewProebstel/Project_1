@@ -17,7 +17,6 @@ RSpec.describe 'The dropzone skydivers creation' do
     @skydiver2 = dropzone.skydivers.create(wingsuit: true, jumps: 2112, first_name: "Geddy", last_name: "Lee")
 
     visit "/dropzones/#{dropzone.id}/skydivers/new"
-    save_and_open_page
     fill_in('Wingsuit', with: 'true')
     fill_in('Jumps', with: '45')
     fill_in('First name', with: 'Mike')

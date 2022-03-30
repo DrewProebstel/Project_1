@@ -10,6 +10,6 @@
   Jumps:<%= skydiver.jumps %>
   Created At: <%= skydiver.created_at %>
   Updated At: <%= skydiver.updated_at %>
-  Dropzone ID: <%= skydiver.dropzone_id %> <%= link_to "Edit #{skydiver.first_name}", "/skydivers/#{skydiver.id}/edit" %>
+  Dropzone ID: <%= skydiver.dropzone_id %> <%= link_to "Edit Skydiver", "/skydivers/#{skydiver.id}/edit" %>  <%= link_to "Delete Skydiver", "/skydivers/#{skydiver.id}", method: :delete%>
  <p></p>
 <% end %>

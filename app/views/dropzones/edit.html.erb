@@ -1,3 +1,5 @@
+<%= link_to "skydivers", "/skydivers" %>
+<%= link_to "dropzones", "/dropzones" %>
 <%= form_with url: "/dropzones/#{@dropzone.id}", method: :patch, local:true do |form| %>
   <%= form.label :windtunnel %>
   <%= form.text_field :windtunnel %>

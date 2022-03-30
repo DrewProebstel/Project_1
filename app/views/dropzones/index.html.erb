@@ -5,5 +5,5 @@
 
 <h1>Dropzones</h1>
 <% @dropzones.each do |dropzone| %>
-  <p><%= dropzone.name %><%= link_to "Edit #{dropzone.name}", "/dropzones/#{dropzone.id}/edit"%></p>
+  <p><%= dropzone.name %>  <%= link_to "Edit #{dropzone.name}", "/dropzones/#{dropzone.id}/edit"%>  <%= link_to "Delete #{dropzone.name}", "/dropzones/#{dropzone.id}", method: :delete   %></p>  
 <% end %>

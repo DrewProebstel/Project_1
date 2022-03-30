@@ -9,12 +9,13 @@ Rails.application.routes.draw do
   post '/dropzones', to: 'dropzones#create'
   get '/dropzones/:id/edit', to:'dropzones#edit'
   patch '/dropzones/:id', to: 'dropzones#update'
-
+  delete '/dropzones/:id', to: 'dropzones#destroy'
 
   get '/skydivers', to: 'skydivers#index'
   get '/skydivers/:id', to:'skydivers#show'
   get '/skydivers/:id/edit', to:'skydivers#edit'
   patch '/skydivers/:id', to: 'skydivers#update'
+  delete '/skydivers/:id', to: 'skydivers#destroy'
 
 
 end

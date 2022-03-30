@@ -10,7 +10,7 @@ class DropzonesController < ApplicationController
 
   def create
     dropzone = Dropzone.create(windtunnel: params[:windtunnel],employees: params[:employees],city: params[:city],name: params[:name])
-    redirect_to "/dropzones/#{dropzone.id}"
+    redirect_to "/dropzones"
   end
 
   def edit
@@ -20,7 +20,14 @@ class DropzonesController < ApplicationController
   def update
     @dropzone = Dropzone.find(params[:id])
     @dropzone.update(dropzone_params)
-    redirect_to '/dropzones'
+    redirect_to "/dropzones/#{@dropzone.id}"
+  end
+
+  def destroy
+    @dropzone = Dropzone.find(params[:id])
+    @dropzone.skydivers.destroy
+    @dropzone.destroy
+    redirect_to "/dropzones"
   end
 
 private
