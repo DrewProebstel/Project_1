@@ -1,6 +1,7 @@
 class SkydiversController < ApplicationController
   def index
-    @skydivers = Skydiver.all
+    @skydivers = Skydiver.where(:wingsuit => true)
+    # @skydivers = Skydiver.all
   end
   def show
     @skydiver = Skydiver.find(params[:id])
