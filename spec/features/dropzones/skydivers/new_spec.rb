@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'The dropzone skydivers creation' do
-  it 'links to the new page from the artist index' do
+  it 'links to the new page from the index' do
     dropzone = Dropzone.create(windtunnel: false, employees: 12, city: "Moab", name: "Skydive Moab")
     @skydiver1 = dropzone.skydivers.create(wingsuit: false, jumps: 40, first_name: "Drew", last_name: "Proebstel")
     @skydiver2 = dropzone.skydivers.create(wingsuit: true, jumps: 2112, first_name: "Geddy", last_name: "Lee")
     visit "/dropzones/#{dropzone.id}/skydivers"
 
-    click_link('New Skydiver')
+    click_link('Create Skydiver')
     expect(current_path).to eq("/dropzones/#{dropzone.id}/skydivers/new")
   end
 

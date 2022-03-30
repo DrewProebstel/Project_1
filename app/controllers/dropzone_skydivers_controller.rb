@@ -1,7 +1,9 @@
 class DropzoneSkydiversController < ApplicationController
   def index
     @dropzone = Dropzone.find(params[:id])
-    if params[:sort] == "true"
+    if params[:jump_no] != nil
+      @skydivers = @dropzone.skydivers.where("jumps > ?", params[:jump_no].to_i)
+    elsif params[:sort] == "true"
       @skydivers = @dropzone.skydivers.order(:last_name)
     else
        @skydivers = @dropzone.skydivers

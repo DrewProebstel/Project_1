@@ -1,3 +1,5 @@
+<%= link_to "Skydivers", "/skydivers" %>
+<%= link_to "Dropzones", "/dropzones" %>
 <%= form_with url: "/skydivers/#{params[:id]}", method: :patch, local: true do |form| %>
   <%= form.label :wingsuit%>
   <%= form.text_field :wingsuit%>
