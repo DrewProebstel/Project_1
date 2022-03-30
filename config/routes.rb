@@ -3,14 +3,18 @@ Rails.application.routes.draw do
   get '/dropzones', to: 'dropzones#index'
   get '/dropzones/new', to: 'dropzones#new'
   get '/dropzones/:id', to:'dropzones#show'
+  get '/dropzones/:id/skydivers/new', to: 'dropzone_skydivers#new'
   get '/dropzones/:id/skydivers', to:'dropzone_skydivers#index'
+  post '/dropzones/:id/skydivers', to:'dropzone_skydivers#create'
   post '/dropzones', to: 'dropzones#create'
   get '/dropzones/:id/edit', to:'dropzones#edit'
   patch '/dropzones/:id', to: 'dropzones#update'
 
+
   get '/skydivers', to: 'skydivers#index'
   get '/skydivers/:id', to:'skydivers#show'
-
+  get '/skydivers/:id/edit', to:'skydivers#edit'
+  patch '/skydivers/:id', to: 'skydivers#update'
 
 
 end

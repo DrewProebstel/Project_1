@@ -1,0 +1,11 @@
+<%= form_with url: "/dropzones/#{params[:id]}/skydivers", method: :post, local: true do |form| %>
+  <%= form.label :wingsuit%>
+  <%= form.text_field :wingsuit%>
+  <%= form.label :jumps%>
+  <%= form.text_field :jumps%>
+  <%= form.label :first_name%>
+  <%= form.text_field :first_name%>
+  <%= form.label :last_name%>
+  <%= form.text_field :last_name%>
+  <%= form.submit "Create Skydiver" %>
+<% end %>
